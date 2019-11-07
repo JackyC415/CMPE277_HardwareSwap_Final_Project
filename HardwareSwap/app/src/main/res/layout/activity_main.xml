@@ -8,46 +8,46 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/ePassword"
+        android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
         android:ems="10"
-        android:hint="password"
+        android:hint="Enter Password"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/eUsername"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumber"
         app:layout_constraintVertical_bias="0.01" />
 
     <Button
-        android:id="@+id/bLogin"
+        android:id="@+id/loginButton"
         android:layout_width="151dp"
         android:layout_height="49dp"
         android:text="Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ePassword"
+        app:layout_constraintTop_toBottomOf="@+id/password"
         app:layout_constraintVertical_bias="0.173" />
 
 
 
     <EditText
-        android:id="@+id/eUsername"
+        android:id="@+id/phoneNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="156dp"
         android:ems="10"
-        android:hint="username"
-        android:inputType="textPersonName"
+        android:hint="Enter Phone Number"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/bRegister"
+        android:id="@+id/registerButton"
         android:layout_width="172dp"
         android:layout_height="46dp"
         android:layout_marginBottom="224dp"
