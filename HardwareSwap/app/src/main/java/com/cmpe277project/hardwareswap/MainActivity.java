@@ -2,12 +2,11 @@ package com.cmpe277project.hardwareswap;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if(id == R.id.buttonSignIn){
                     System.out.println("Login Button Clicked");
+                    startHomePageActivity();
 
                 }
                 else if (id == R.id.buttonRegister){
@@ -48,6 +48,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void startHomePageActivity(){
+        Intent homepageIntent = new Intent(MainActivity.this, HomePageActivity.class);
+        startActivity(homepageIntent);
 
+    }
 
 }
