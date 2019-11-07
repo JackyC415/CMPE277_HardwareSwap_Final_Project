@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "740761068605",
+    "firebase_url": "https://hardwareswap-98fb6.firebaseio.com",
+    "project_id": "hardwareswap-98fb6",
+    "storage_bucket": "hardwareswap-98fb6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740761068605:android:3cb64c81327c9b608f3654",
+        "android_client_info": {
+          "package_name": "com.cmpe277project.hardwareswap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "740761068605-cpijt3p9dc68dc5qlao43ejsmr5hqt67.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXog8WCBLqv1D1BdYSoOPC2JUXLmP0REo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "740761068605-cpijt3p9dc68dc5qlao43ejsmr5hqt67.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
