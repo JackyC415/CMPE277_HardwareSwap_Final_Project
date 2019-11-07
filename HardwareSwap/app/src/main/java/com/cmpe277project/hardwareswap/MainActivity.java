@@ -17,8 +17,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        final Button loginButton = findViewById(R.id.loginButton);
-        final Button registerButton = findViewById(R.id.registerButton);
+        final Button loginButton = findViewById(R.id.buttonSignIn);
+        final Button registerButton = findViewById(R.id.buttonRegister);
+        final Button resetButton = findViewById(R.id.buttonReset);
         final TextView phoneNumber = findViewById(R.id.phoneNumber);
         final TextView password = findViewById(R.id.password);
 
@@ -27,12 +28,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view){
                 final int id = view.getId();
 
-                if(id == R.id.loginButton){
+                if(id == R.id.buttonSignIn){
                     System.out.println("Login Button Clicked");
 
                 }
-                else if (id == R.id.registerButton){
+                else if (id == R.id.buttonRegister){
                     System.out.println("Register Button Clicked");
+                }
+                else if (id == R.id.buttonReset){
+                    System.out.println("Reset Button Clicked");
                 }
             }
         };
@@ -40,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         // Set button click
         loginButton.setOnClickListener(buttonClick);
         registerButton.setOnClickListener(buttonClick);
-
+        resetButton.setOnClickListener(buttonClick);
     }
 
 
