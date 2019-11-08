@@ -8,11 +8,11 @@
         android:title="Payment Summary"
         app:showAsAction="never" />
     <item
-        android:id="@+id/logout"
-        android:orderInCategory="101"
-        android:title="Log Out" />
-    <item
         android:id="@+id/manage"
         android:orderInCategory="102"
         android:title="Manage Card" />
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="101"
+        android:title="Log Out" />
 </menu>

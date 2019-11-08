@@ -70,8 +70,8 @@ public class LocationActivity extends FragmentActivity implements OnMyLocationBu
                     locationCycle = 1;
                 }
                 if (locationCycle == 1) {//Electronics nearby
-                    lat = 37.315616;
-                    lng = -120.4706;
+                    lat = 37.3347;
+                    lng = -121.8811;
                     location.setLatitude(lat);
                     location.setLongitude(lng);
                     LatLng = new LatLng(lat, lng);
@@ -113,12 +113,12 @@ public class LocationActivity extends FragmentActivity implements OnMyLocationBu
             @Override
             public void onClick(View v) {
 
-                if ((lat > 37.31531) && (lat < 37.31566) && (lng < -120.4705) && (lng > -120.4708)) {
-                    Toast.makeText(getApplicationContext(), "Found Electronics!", Toast.LENGTH_SHORT).show();
+                if (lat == 37.3347 && lng == -121.8811) {
+                    Toast.makeText(getApplicationContext(), "Found Electronics near SJSU!", Toast.LENGTH_SHORT).show();
                     check = true;
                 }
                 if (check) {
-                    startActivity(new Intent(LocationActivity.this, Menu1.class));
+                    startActivity(new Intent(LocationActivity.this, Menu.class));
                 }
                 else  {
                     Toast.makeText(getApplicationContext(), "Not at a participating location!", Toast.LENGTH_SHORT).show();

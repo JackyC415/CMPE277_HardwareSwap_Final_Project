@@ -116,7 +116,7 @@ public class CardRegistrationActivity extends AppCompatActivity {
                 builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        startActivity(new Intent(CardRegistrationActivity.this, Menu1.class));
+                        startActivity(new Intent(CardRegistrationActivity.this, Menu.class));
                     }
                 });
                 builder.create();

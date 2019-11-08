@@ -109,9 +109,9 @@
 
         <TextView
             android:id="@+id/price"
-            android:layout_width="129dp"
-            android:layout_height="51dp"
-            android:text="Price: $5"
+            android:layout_width="160dp"
+            android:layout_height="66dp"
+            android:text="Price: $149.99"
             android:textAppearance="@style/TextAppearance.AppCompat.Button"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"

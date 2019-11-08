@@ -132,19 +132,19 @@
             android:id="@+id/pricetag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:text="$0.99"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="$899.99"
             android:textAppearance="@style/TextAppearance.AppCompat.Button"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.098"
             app:layout_constraintStart_toEndOf="@+id/price"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.544" />
+            app:layout_constraintVertical_bias="0.553" />
 
     </android.support.constraint.ConstraintLayout>
 

@@ -50,7 +50,7 @@ public class DeleteCardActivity extends AppCompatActivity {
                     builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
-                            startActivity(new Intent(DeleteCardActivity.this, Menu1.class));
+                            startActivity(new Intent(DeleteCardActivity.this, Menu.class));
                         }
                     });
                     builder.create();

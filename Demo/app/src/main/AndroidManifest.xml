@@ -36,11 +36,11 @@
         <activity android:name=".ManageCardActivity"></activity>
         <activity android:name=".DeleteCardActivity"></activity>
         <activity android:name=".LocationCheckActivity" />
-        <activity android:name=".Menu1"></activity>
-        <activity android:name=".padthai" />
-        <activity android:name=".padseeew" />
-        <activity android:name=".thaitea" />
-        <activity android:name=".springRoll" />
+        <activity android:name=".Menu"></activity>
+        <activity android:name=".sGalaxy" />
+        <activity android:name=".iPhone" />
+        <activity android:name=".CPU" />
+        <activity android:name=".gPixel" />
         <activity android:name=".Payment"></activity>
         <activity android:name=".orderSummary"></activity>
 

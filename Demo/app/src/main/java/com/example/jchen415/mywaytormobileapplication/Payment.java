@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.content.Intent;
 import android.widget.TextView;
 import android.content.DialogInterface;
-import android.widget.Toast;
 
 
 import java.text.DecimalFormat;
@@ -23,9 +22,6 @@ public class Payment extends AppCompatActivity {
     TextView totalAmount;
 
     //create button
-    Button fivePercent;
-    Button tenPercent;
-    Button twentyFivePercent;
     Button cashButton;
     Button cardButton;
 
@@ -41,20 +37,12 @@ public class Payment extends AppCompatActivity {
     double subTotalAmount = 0;
 
     //define constant
-    final double ZERO_PERCENT = 0.00;
-    final double TEN_PERCENT = 0.10;
-    final double TWENTY_FIVE_PERCENT = 0.25;
     final double TAX = 0.08;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
-
-        //set pointer to the object
-        fivePercent = (Button) findViewById(R.id.fiveP);
-        tenPercent = (Button) findViewById(R.id.tenPercent);
-        twentyFivePercent = (Button) findViewById(R.id.twentyFive);
 
         db = new DBController(this);
         subTotal = (TextView) findViewById(R.id.subTotal);
@@ -69,65 +57,15 @@ public class Payment extends AppCompatActivity {
 
             } while (res.moveToNext());
 
-        //call functions
-        zeroPT();
-        tenPT();
-        twentyFivePT();
         cashPayment();
         checkCreditCard();
 
         //calculating the amount and display
         taxAmount = total * TAX;
-
         subTotalAmount = taxAmount + total;
-
-        subTotal.setText("SubTotal : " + numberFormat.format(subTotalAmount));
+        subTotal.setText("SubTotal: " + numberFormat.format(subTotalAmount));
     }
 
-    public void zeroPT() {
-        fivePercent.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v) {
-
-
-                totalAmount.setText("FINAL TOTAL: $" + numberFormat.format(subTotalAmount));
-
-            }
-        });
-
-    }
-
-    public void tenPT() {
-        tenPercent.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v) {
-
-
-                tipsAmount = TEN_PERCENT * subTotalAmount;
-                finalTotal = tipsAmount + subTotalAmount;
-
-                totalAmount.setText("FINAL TOTAL: $" + numberFormat.format(finalTotal));
-
-            }
-        });
-
-    }
-
-    public void twentyFivePT() {
-        twentyFivePercent.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v) {
-
-
-                tipsAmount = TWENTY_FIVE_PERCENT * subTotalAmount;
-                finalTotal = tipsAmount + subTotalAmount;
-
-                totalAmount.setText("FINAL TOTAL: $" + numberFormat.format(finalTotal));
-
-            }
-        });
-
-    }
 
     public void cashPayment() {
         cashButton = (Button) findViewById(R.id.cash);
@@ -136,11 +74,11 @@ public class Payment extends AppCompatActivity {
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(Payment.this);
                 builder.setTitle("Successful Payment");
-                builder.setMessage("Thank You, Your Food Will Be Right Up");
+                builder.setMessage("Thank You, Payment received!");
                 builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Intent payment = new Intent(Payment.this, Menu1.class);
+                        Intent payment = new Intent(Payment.this, Menu.class);
                         db.deleteData();
                         startActivity(payment);
                     }
@@ -173,11 +111,11 @@ public class Payment extends AppCompatActivity {
                 } else {
                     AlertDialog.Builder builder = new AlertDialog.Builder(Payment.this);
                     builder.setTitle("Successful Payment");
-                    builder.setMessage("Thank You, Your Food Will Be Right Up");
+                    builder.setMessage("Thank You, Payment received!");
                     builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
-                            Intent payment = new Intent(Payment.this, Menu1.class);
+                            Intent payment = new Intent(Payment.this, Menu.class);
                             db.deleteData();
                             startActivity(payment);
                         }
