@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if (id == R.id.buttonRegister){
                     System.out.println("Register Button Clicked");
+                    startRegisterActivity();
                 }
                 else if (id == R.id.buttonReset){
                     System.out.println("Reset Button Clicked");
@@ -52,6 +53,11 @@ public class MainActivity extends AppCompatActivity {
         Intent homepageIntent = new Intent(MainActivity.this, HomePageActivity.class);
         startActivity(homepageIntent);
 
+    }
+
+    public void startRegisterActivity(){
+        Intent registerIntent = new Intent (MainActivity.this, RegisterActivity.class);
+        startActivity(registerIntent);
     }
 
 }
