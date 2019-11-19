@@ -1,1 +1,1 @@
-# CMPE277_HardwareSwap_Final_Project
+# HardwareSwap Project
