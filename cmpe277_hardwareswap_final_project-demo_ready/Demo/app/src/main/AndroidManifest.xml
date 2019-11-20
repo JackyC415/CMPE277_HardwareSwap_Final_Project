@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jchen415.mywaytormobileapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.LOCATION_HARDWARE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/mywaytoralf"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/mywaytoralf"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBUcIeM3VGOnedkisLKzhfhRFL1lo3yUbQ" />
+        <activity
+            android:name=".StartActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".CardRegistrationActivity"></activity>
+        <activity android:name=".LocationActivity"></activity>
+        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".ManageCardActivity"></activity>
+        <activity android:name=".DeleteCardActivity"></activity>
+        <activity android:name=".LocationCheckActivity" />
+        <activity android:name=".Menu"></activity>
+        <activity android:name=".sGalaxy" />
+        <activity android:name=".iPhone" />
+        <activity android:name=".CPU" />
+        <activity android:name=".gPixel" />
+        <activity android:name=".Payment"></activity>
+        <activity android:name=".orderSummary"></activity>
+
+    </application>
+</manifest>

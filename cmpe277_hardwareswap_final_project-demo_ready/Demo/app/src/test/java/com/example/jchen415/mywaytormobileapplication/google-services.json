@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "201380358057",
+    "firebase_url": "https://mywaytormobileapplication.firebaseio.com",
+    "project_id": "mywaytormobileapplication",
+    "storage_bucket": "mywaytormobileapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:201380358057:android:649f9de08ae91ae6",
+        "android_client_info": {
+          "package_name": "com.example.jchen415.mywaytor_mobile_application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "201380358057-1071askqq77000inm9kao3gkrdvgajjd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jchen415.mywaytor_mobile_application",
+            "certificate_hash": "428ef3f5c55bbdc703cd4c471bf07997bb17c142"
+          }
+        },
+        {
+          "client_id": "201380358057-vbtrkgal1nljr3cbaa2kvt7mnd1bn24k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUcIeM3VGOnedkisLKzhfhRFL1lo3yUbQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "201380358057-vbtrkgal1nljr3cbaa2kvt7mnd1bn24k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:201380358057:android:e459d04c0701bcdc",
+        "android_client_info": {
+          "package_name": "com.example.jchen255.mywaytormobileapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "201380358057-vbtrkgal1nljr3cbaa2kvt7mnd1bn24k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUcIeM3VGOnedkisLKzhfhRFL1lo3yUbQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
