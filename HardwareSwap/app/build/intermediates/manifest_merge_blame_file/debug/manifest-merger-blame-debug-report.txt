@@ -1,0 +1,263 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.cmpe277project.hardwareswap"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="25"
+8-->/Volumes/Others/CMPE277_HardwareSwap_Final_Project/CMPE277_HardwareSwap_Final_Project/HardwareSwap/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Volumes/Others/CMPE277_HardwareSwap_Final_Project/CMPE277_HardwareSwap_Final_Project/HardwareSwap/app/src/main/AndroidManifest.xml
+10
+11    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+12    <!-- <uses-sdk android:minSdkVersion="14" /> -->
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[com.google.firebase:firebase-firestore:21.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/8d9e8dcfbffa84e08597036c1a6cebdd/jetified-firebase-firestore-21.2.1/AndroidManifest.xml:13:5-79
+13-->[com.google.firebase:firebase-firestore:21.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/8d9e8dcfbffa84e08597036c1a6cebdd/jetified-firebase-firestore-21.2.1/AndroidManifest.xml:13:22-76
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->[com.google.firebase:firebase-firestore:21.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/8d9e8dcfbffa84e08597036c1a6cebdd/jetified-firebase-firestore-21.2.1/AndroidManifest.xml:14:5-67
+14-->[com.google.firebase:firebase-firestore:21.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/8d9e8dcfbffa84e08597036c1a6cebdd/jetified-firebase-firestore-21.2.1/AndroidManifest.xml:14:22-64
+15
+16    <uses-feature
+16-->[com.google.android.gms:play-services-maps:16.1.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/82692fc5b9fb61244db39fc047e83d93/jetified-play-services-maps-16.1.0/AndroidManifest.xml:26:5-28:35
+17        android:glEsVersion="0x00020000"
+17-->[com.google.android.gms:play-services-maps:16.1.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/82692fc5b9fb61244db39fc047e83d93/jetified-play-services-maps-16.1.0/AndroidManifest.xml:27:9-41
+18        android:required="true" />
+18-->[com.google.android.gms:play-services-maps:16.1.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/82692fc5b9fb61244db39fc047e83d93/jetified-play-services-maps-16.1.0/AndroidManifest.xml:28:9-32
+19
+20    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+20-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/d5af08c18eb6a1f79eb2ad8b2ed5e1e8/play-services-measurement-api-17.2.1/AndroidManifest.xml:24:5-68
+20-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/d5af08c18eb6a1f79eb2ad8b2ed5e1e8/play-services-measurement-api-17.2.1/AndroidManifest.xml:24:22-65
+21    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+21-->[com.google.firebase:firebase-iid:20.0.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/28e7681f7237a0657cdb23d23c7b1cc6/firebase-iid-20.0.0/AndroidManifest.xml:26:5-82
+21-->[com.google.firebase:firebase-iid:20.0.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/28e7681f7237a0657cdb23d23c7b1cc6/firebase-iid-20.0.0/AndroidManifest.xml:26:22-79
+22    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+22-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/440194db52e743b9bb6ca4a0f89c1080/play-services-measurement-17.2.1/AndroidManifest.xml:26:5-110
+22-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/440194db52e743b9bb6ca4a0f89c1080/play-services-measurement-17.2.1/AndroidManifest.xml:26:22-107
+23
+24    <application
+24-->/Volumes/Others/CMPE277_HardwareSwap_Final_Project/CMPE277_HardwareSwap_Final_Project/HardwareSwap/app/src/main/AndroidManifest.xml:5:5-27:19
+25        android:allowBackup="true"
+25-->/Volumes/Others/CMPE277_HardwareSwap_Final_Project/CMPE277_HardwareSwap_Final_Project/HardwareSwap/app/src/main/AndroidManifest.xml:6:9-35
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.0.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/93d7ae8bc00cd79d08e935d76825e97b/core-1.0.1/AndroidManifest.xml:22:18-86
+27        android:debuggable="true"
+28        android:icon="@mipmap/ic_launcher"
+28-->/Volumes/Others/CMPE277_HardwareSwap_Final_Project/CMPE277_HardwareSwap_Final_Project/HardwareSwap/app/src/main/AndroidManifest.xml:7:9-43
+29        android:label="@string/app_name"
+29-->/Volumes/Others/CMPE277_HardwareSwap_Final_Project/CMPE277_HardwareSwap_Final_Project/HardwareSwap/app/src/main/AndroidManifest.xml:8:9-41
+30        android:roundIcon="@mipmap/ic_launcher_round"
+30-->/Volumes/Others/CMPE277_HardwareSwap_Final_Project/CMPE277_HardwareSwap_Final_Project/HardwareSwap/app/src/main/AndroidManifest.xml:9:9-54
+31        android:supportsRtl="true"
+31-->/Volumes/Others/CMPE277_HardwareSwap_Final_Project/CMPE277_HardwareSwap_Final_Project/HardwareSwap/app/src/main/AndroidManifest.xml:10:9-35
+32        android:testOnly="true"
+33        android:theme="@style/AppTheme" >
+33-->/Volumes/Others/CMPE277_HardwareSwap_Final_Project/CMPE277_HardwareSwap_Final_Project/HardwareSwap/app/src/main/AndroidManifest.xml:11:9-40
+34        <activity android:name="com.cmpe277project.hardwareswap.AddItemActivity" />
+34-->/Volumes/Others/CMPE277_HardwareSwap_Final_Project/CMPE277_HardwareSwap_Final_Project/HardwareSwap/app/src/main/AndroidManifest.xml:12:9-62
+34-->/Volumes/Others/CMPE277_HardwareSwap_Final_Project/CMPE277_HardwareSwap_Final_Project/HardwareSwap/app/src/main/AndroidManifest.xml:12:19-50
+35
+36        <meta-data
+36-->/Volumes/Others/CMPE277_HardwareSwap_Final_Project/CMPE277_HardwareSwap_Final_Project/HardwareSwap/app/src/main/AndroidManifest.xml:14:9-16:55
+37            android:name="com.google.android.geo.API_KEY"
+37-->/Volumes/Others/CMPE277_HardwareSwap_Final_Project/CMPE277_HardwareSwap_Final_Project/HardwareSwap/app/src/main/AndroidManifest.xml:15:13-58
+38            android:value="@string/google_maps_key" />
+38-->/Volumes/Others/CMPE277_HardwareSwap_Final_Project/CMPE277_HardwareSwap_Final_Project/HardwareSwap/app/src/main/AndroidManifest.xml:16:13-52
+39
+40        <activity android:name="com.cmpe277project.hardwareswap.HomePageActivity" />
+40-->/Volumes/Others/CMPE277_HardwareSwap_Final_Project/CMPE277_HardwareSwap_Final_Project/HardwareSwap/app/src/main/AndroidManifest.xml:18:9-54
+40-->/Volumes/Others/CMPE277_HardwareSwap_Final_Project/CMPE277_HardwareSwap_Final_Project/HardwareSwap/app/src/main/AndroidManifest.xml:18:19-51
+41        <activity android:name="com.cmpe277project.hardwareswap.RegisterActivity" />
+41-->/Volumes/Others/CMPE277_HardwareSwap_Final_Project/CMPE277_HardwareSwap_Final_Project/HardwareSwap/app/src/main/AndroidManifest.xml:19:9-54
+41-->/Volumes/Others/CMPE277_HardwareSwap_Final_Project/CMPE277_HardwareSwap_Final_Project/HardwareSwap/app/src/main/AndroidManifest.xml:19:19-51
+42        <activity android:name="com.cmpe277project.hardwareswap.MainActivity" >
+42-->/Volumes/Others/CMPE277_HardwareSwap_Final_Project/CMPE277_HardwareSwap_Final_Project/HardwareSwap/app/src/main/AndroidManifest.xml:20:9-26:20
+42-->/Volumes/Others/CMPE277_HardwareSwap_Final_Project/CMPE277_HardwareSwap_Final_Project/HardwareSwap/app/src/main/AndroidManifest.xml:20:19-47
+43            <intent-filter>
+43-->/Volumes/Others/CMPE277_HardwareSwap_Final_Project/CMPE277_HardwareSwap_Final_Project/HardwareSwap/app/src/main/AndroidManifest.xml:21:13-25:29
+44                <action android:name="android.intent.action.MAIN" />
+44-->/Volumes/Others/CMPE277_HardwareSwap_Final_Project/CMPE277_HardwareSwap_Final_Project/HardwareSwap/app/src/main/AndroidManifest.xml:22:17-69
+44-->/Volumes/Others/CMPE277_HardwareSwap_Final_Project/CMPE277_HardwareSwap_Final_Project/HardwareSwap/app/src/main/AndroidManifest.xml:22:25-66
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+46-->/Volumes/Others/CMPE277_HardwareSwap_Final_Project/CMPE277_HardwareSwap_Final_Project/HardwareSwap/app/src/main/AndroidManifest.xml:24:17-77
+46-->/Volumes/Others/CMPE277_HardwareSwap_Final_Project/CMPE277_HardwareSwap_Final_Project/HardwareSwap/app/src/main/AndroidManifest.xml:24:27-74
+47            </intent-filter>
+48        </activity>
+49        <activity
+49-->[com.google.firebase:firebase-auth:19.1.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/0e1720d4cfdf1c7b665c79377e109768/firebase-auth-19.1.0/AndroidManifest.xml:24:9-31:50
+50            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+50-->[com.google.firebase:firebase-auth:19.1.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/0e1720d4cfdf1c7b665c79377e109768/firebase-auth-19.1.0/AndroidManifest.xml:25:13-85
+51            android:excludeFromRecents="true"
+51-->[com.google.firebase:firebase-auth:19.1.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/0e1720d4cfdf1c7b665c79377e109768/firebase-auth-19.1.0/AndroidManifest.xml:26:13-46
+52            android:exported="true"
+52-->[com.google.firebase:firebase-auth:19.1.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/0e1720d4cfdf1c7b665c79377e109768/firebase-auth-19.1.0/AndroidManifest.xml:27:13-36
+53            android:launchMode="singleTask"
+53-->[com.google.firebase:firebase-auth:19.1.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/0e1720d4cfdf1c7b665c79377e109768/firebase-auth-19.1.0/AndroidManifest.xml:28:13-44
+54            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+54-->[com.google.firebase:firebase-auth:19.1.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/0e1720d4cfdf1c7b665c79377e109768/firebase-auth-19.1.0/AndroidManifest.xml:29:13-102
+55            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+55-->[com.google.firebase:firebase-auth:19.1.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/0e1720d4cfdf1c7b665c79377e109768/firebase-auth-19.1.0/AndroidManifest.xml:30:13-72
+56
+57        <service
+57-->[com.google.firebase:firebase-auth:19.1.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/0e1720d4cfdf1c7b665c79377e109768/firebase-auth-19.1.0/AndroidManifest.xml:33:9-39:19
+58            android:name="com.google.firebase.components.ComponentDiscoveryService"
+58-->[com.google.firebase:firebase-auth:19.1.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/0e1720d4cfdf1c7b665c79377e109768/firebase-auth-19.1.0/AndroidManifest.xml:34:13-84
+59            android:directBootAware="true"
+59-->[com.google.firebase:firebase-common:19.2.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/214e8a13fc5ab0c76d2935f8af25fc26/firebase-common-19.2.0/AndroidManifest.xml:15:13-43
+60            android:exported="false" >
+60-->[com.google.firebase:firebase-auth:19.1.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/0e1720d4cfdf1c7b665c79377e109768/firebase-auth-19.1.0/AndroidManifest.xml:35:13-37
+61            <meta-data
+61-->[com.google.firebase:firebase-auth:19.1.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/0e1720d4cfdf1c7b665c79377e109768/firebase-auth-19.1.0/AndroidManifest.xml:36:13-38:85
+62                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+62-->[com.google.firebase:firebase-auth:19.1.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/0e1720d4cfdf1c7b665c79377e109768/firebase-auth-19.1.0/AndroidManifest.xml:37:17-109
+63                android:value="com.google.firebase.components.ComponentRegistrar" />
+63-->[com.google.firebase:firebase-auth:19.1.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/0e1720d4cfdf1c7b665c79377e109768/firebase-auth-19.1.0/AndroidManifest.xml:38:17-82
+64            <meta-data
+64-->[com.google.firebase:firebase-firestore:21.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/8d9e8dcfbffa84e08597036c1a6cebdd/jetified-firebase-firestore-21.2.1/AndroidManifest.xml:20:13-22:85
+65                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+65-->[com.google.firebase:firebase-firestore:21.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/8d9e8dcfbffa84e08597036c1a6cebdd/jetified-firebase-firestore-21.2.1/AndroidManifest.xml:21:17-111
+66                android:value="com.google.firebase.components.ComponentRegistrar" />
+66-->[com.google.firebase:firebase-firestore:21.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/8d9e8dcfbffa84e08597036c1a6cebdd/jetified-firebase-firestore-21.2.1/AndroidManifest.xml:22:17-82
+67            <meta-data
+67-->[com.google.firebase:firebase-database:19.2.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/11eea3596166b118c0fb2c94b1c6ff94/firebase-database-19.2.0/AndroidManifest.xml:32:13-34:85
+68                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+68-->[com.google.firebase:firebase-database:19.2.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/11eea3596166b118c0fb2c94b1c6ff94/firebase-database-19.2.0/AndroidManifest.xml:33:17-109
+69                android:value="com.google.firebase.components.ComponentRegistrar" />
+69-->[com.google.firebase:firebase-database:19.2.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/11eea3596166b118c0fb2c94b1c6ff94/firebase-database-19.2.0/AndroidManifest.xml:34:17-82
+70            <meta-data
+70-->[com.google.firebase:firebase-storage:19.1.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/6c87399fcf3120a8a0bfb4ff97b89a69/firebase-storage-19.1.0/AndroidManifest.xml:33:13-35:85
+71                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+71-->[com.google.firebase:firebase-storage:19.1.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/6c87399fcf3120a8a0bfb4ff97b89a69/firebase-storage-19.1.0/AndroidManifest.xml:34:17-107
+72                android:value="com.google.firebase.components.ComponentRegistrar" />
+72-->[com.google.firebase:firebase-storage:19.1.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/6c87399fcf3120a8a0bfb4ff97b89a69/firebase-storage-19.1.0/AndroidManifest.xml:35:17-82
+73            <meta-data
+73-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/d5af08c18eb6a1f79eb2ad8b2ed5e1e8/play-services-measurement-api-17.2.1/AndroidManifest.xml:30:13-32:85
+74                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+74-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/d5af08c18eb6a1f79eb2ad8b2ed5e1e8/play-services-measurement-api-17.2.1/AndroidManifest.xml:31:17-139
+75                android:value="com.google.firebase.components.ComponentRegistrar" />
+75-->[com.google.android.gms:play-services-measurement-api:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/d5af08c18eb6a1f79eb2ad8b2ed5e1e8/play-services-measurement-api-17.2.1/AndroidManifest.xml:32:17-82
+76            <meta-data
+76-->[com.google.firebase:firebase-iid:20.0.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/28e7681f7237a0657cdb23d23c7b1cc6/firebase-iid-20.0.0/AndroidManifest.xml:32:13-34:85
+77                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+77-->[com.google.firebase:firebase-iid:20.0.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/28e7681f7237a0657cdb23d23c7b1cc6/firebase-iid-20.0.0/AndroidManifest.xml:33:17-96
+78                android:value="com.google.firebase.components.ComponentRegistrar" />
+78-->[com.google.firebase:firebase-iid:20.0.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/28e7681f7237a0657cdb23d23c7b1cc6/firebase-iid-20.0.0/AndroidManifest.xml:34:17-82
+79        </service>
+80        <!--
+81             FirebaseMessagingService performs security checks at runtime,
+82             but set to not exported to explicitly avoid allowing another app to call it.
+83        -->
+84        <service
+84-->[com.google.firebase:firebase-messaging:20.0.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/d93c96e22f28274bab2891a7042cfd52/jetified-firebase-messaging-20.0.0/AndroidManifest.xml:28:9-34:19
+85            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+85-->[com.google.firebase:firebase-messaging:20.0.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/d93c96e22f28274bab2891a7042cfd52/jetified-firebase-messaging-20.0.0/AndroidManifest.xml:29:13-82
+86            android:exported="false" >
+86-->[com.google.firebase:firebase-messaging:20.0.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/d93c96e22f28274bab2891a7042cfd52/jetified-firebase-messaging-20.0.0/AndroidManifest.xml:30:13-37
+87            <intent-filter android:priority="-500" >
+87-->[com.google.firebase:firebase-messaging:20.0.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/d93c96e22f28274bab2891a7042cfd52/jetified-firebase-messaging-20.0.0/AndroidManifest.xml:31:13-33:29
+87-->[com.google.firebase:firebase-messaging:20.0.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/d93c96e22f28274bab2891a7042cfd52/jetified-firebase-messaging-20.0.0/AndroidManifest.xml:31:28-51
+88                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+88-->[com.google.firebase:firebase-messaging:20.0.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/d93c96e22f28274bab2891a7042cfd52/jetified-firebase-messaging-20.0.0/AndroidManifest.xml:32:17-78
+88-->[com.google.firebase:firebase-messaging:20.0.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/d93c96e22f28274bab2891a7042cfd52/jetified-firebase-messaging-20.0.0/AndroidManifest.xml:32:25-75
+89            </intent-filter>
+90        </service> <!-- Needs to be explicitly declared on P+ -->
+91        <uses-library
+91-->[com.google.android.gms:play-services-maps:16.1.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/82692fc5b9fb61244db39fc047e83d93/jetified-play-services-maps-16.1.0/AndroidManifest.xml:33:9-35:40
+92            android:name="org.apache.http.legacy"
+92-->[com.google.android.gms:play-services-maps:16.1.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/82692fc5b9fb61244db39fc047e83d93/jetified-play-services-maps-16.1.0/AndroidManifest.xml:34:13-50
+93            android:required="false" />
+93-->[com.google.android.gms:play-services-maps:16.1.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/82692fc5b9fb61244db39fc047e83d93/jetified-play-services-maps-16.1.0/AndroidManifest.xml:35:13-37
+94
+95        <receiver
+95-->[com.google.firebase:firebase-iid:20.0.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/28e7681f7237a0657cdb23d23c7b1cc6/firebase-iid-20.0.0/AndroidManifest.xml:37:9-44:20
+96            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+96-->[com.google.firebase:firebase-iid:20.0.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/28e7681f7237a0657cdb23d23c7b1cc6/firebase-iid-20.0.0/AndroidManifest.xml:38:13-78
+97            android:exported="true"
+97-->[com.google.firebase:firebase-iid:20.0.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/28e7681f7237a0657cdb23d23c7b1cc6/firebase-iid-20.0.0/AndroidManifest.xml:39:13-36
+98            android:permission="com.google.android.c2dm.permission.SEND" >
+98-->[com.google.firebase:firebase-iid:20.0.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/28e7681f7237a0657cdb23d23c7b1cc6/firebase-iid-20.0.0/AndroidManifest.xml:40:13-73
+99            <intent-filter>
+99-->[com.google.firebase:firebase-iid:20.0.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/28e7681f7237a0657cdb23d23c7b1cc6/firebase-iid-20.0.0/AndroidManifest.xml:41:13-43:29
+100                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+100-->[com.google.firebase:firebase-iid:20.0.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/28e7681f7237a0657cdb23d23c7b1cc6/firebase-iid-20.0.0/AndroidManifest.xml:42:17-81
+100-->[com.google.firebase:firebase-iid:20.0.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/28e7681f7237a0657cdb23d23c7b1cc6/firebase-iid-20.0.0/AndroidManifest.xml:42:25-78
+101            </intent-filter>
+102        </receiver>
+103
+104        <activity
+104-->[com.google.android.gms:play-services-base:17.1.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/8eb866707b690ca0a19e0e3fe5cc8413/play-services-base-17.1.0/AndroidManifest.xml:23:9-26:75
+105            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+105-->[com.google.android.gms:play-services-base:17.1.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/8eb866707b690ca0a19e0e3fe5cc8413/play-services-base-17.1.0/AndroidManifest.xml:24:13-79
+106            android:exported="false"
+106-->[com.google.android.gms:play-services-base:17.1.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/8eb866707b690ca0a19e0e3fe5cc8413/play-services-base-17.1.0/AndroidManifest.xml:25:13-37
+107            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+107-->[com.google.android.gms:play-services-base:17.1.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/8eb866707b690ca0a19e0e3fe5cc8413/play-services-base-17.1.0/AndroidManifest.xml:26:13-72
+108
+109        <receiver
+109-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/440194db52e743b9bb6ca4a0f89c1080/play-services-measurement-17.2.1/AndroidManifest.xml:29:9-33:20
+110            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+110-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/440194db52e743b9bb6ca4a0f89c1080/play-services-measurement-17.2.1/AndroidManifest.xml:30:13-85
+111            android:enabled="true"
+111-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/440194db52e743b9bb6ca4a0f89c1080/play-services-measurement-17.2.1/AndroidManifest.xml:31:13-35
+112            android:exported="false" >
+112-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/440194db52e743b9bb6ca4a0f89c1080/play-services-measurement-17.2.1/AndroidManifest.xml:32:13-37
+113        </receiver>
+114        <receiver
+114-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/440194db52e743b9bb6ca4a0f89c1080/play-services-measurement-17.2.1/AndroidManifest.xml:34:9-42:20
+115            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+115-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/440194db52e743b9bb6ca4a0f89c1080/play-services-measurement-17.2.1/AndroidManifest.xml:35:13-100
+116            android:enabled="true"
+116-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/440194db52e743b9bb6ca4a0f89c1080/play-services-measurement-17.2.1/AndroidManifest.xml:36:13-35
+117            android:exported="true"
+117-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/440194db52e743b9bb6ca4a0f89c1080/play-services-measurement-17.2.1/AndroidManifest.xml:37:13-36
+118            android:permission="android.permission.INSTALL_PACKAGES" >
+118-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/440194db52e743b9bb6ca4a0f89c1080/play-services-measurement-17.2.1/AndroidManifest.xml:38:13-69
+119            <intent-filter>
+119-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/440194db52e743b9bb6ca4a0f89c1080/play-services-measurement-17.2.1/AndroidManifest.xml:39:13-41:29
+120                <action android:name="com.android.vending.INSTALL_REFERRER" />
+120-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/440194db52e743b9bb6ca4a0f89c1080/play-services-measurement-17.2.1/AndroidManifest.xml:40:17-79
+120-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/440194db52e743b9bb6ca4a0f89c1080/play-services-measurement-17.2.1/AndroidManifest.xml:40:25-76
+121            </intent-filter>
+122        </receiver>
+123
+124        <service
+124-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/440194db52e743b9bb6ca4a0f89c1080/play-services-measurement-17.2.1/AndroidManifest.xml:44:9-47:40
+125            android:name="com.google.android.gms.measurement.AppMeasurementService"
+125-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/440194db52e743b9bb6ca4a0f89c1080/play-services-measurement-17.2.1/AndroidManifest.xml:45:13-84
+126            android:enabled="true"
+126-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/440194db52e743b9bb6ca4a0f89c1080/play-services-measurement-17.2.1/AndroidManifest.xml:46:13-35
+127            android:exported="false" />
+127-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/440194db52e743b9bb6ca4a0f89c1080/play-services-measurement-17.2.1/AndroidManifest.xml:47:13-37
+128        <service
+128-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/440194db52e743b9bb6ca4a0f89c1080/play-services-measurement-17.2.1/AndroidManifest.xml:48:9-52:72
+129            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+129-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/440194db52e743b9bb6ca4a0f89c1080/play-services-measurement-17.2.1/AndroidManifest.xml:49:13-87
+130            android:enabled="true"
+130-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/440194db52e743b9bb6ca4a0f89c1080/play-services-measurement-17.2.1/AndroidManifest.xml:50:13-35
+131            android:exported="false"
+131-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/440194db52e743b9bb6ca4a0f89c1080/play-services-measurement-17.2.1/AndroidManifest.xml:51:13-37
+132            android:permission="android.permission.BIND_JOB_SERVICE" />
+132-->[com.google.android.gms:play-services-measurement:17.2.1] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/440194db52e743b9bb6ca4a0f89c1080/play-services-measurement-17.2.1/AndroidManifest.xml:52:13-69
+133
+134        <provider
+134-->[com.google.firebase:firebase-common:19.2.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/214e8a13fc5ab0c76d2935f8af25fc26/firebase-common-19.2.0/AndroidManifest.xml:19:9-23:39
+135            android:name="com.google.firebase.provider.FirebaseInitProvider"
+135-->[com.google.firebase:firebase-common:19.2.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/214e8a13fc5ab0c76d2935f8af25fc26/firebase-common-19.2.0/AndroidManifest.xml:20:13-77
+136            android:authorities="com.cmpe277project.hardwareswap.firebaseinitprovider"
+136-->[com.google.firebase:firebase-common:19.2.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/214e8a13fc5ab0c76d2935f8af25fc26/firebase-common-19.2.0/AndroidManifest.xml:21:13-72
+137            android:exported="false"
+137-->[com.google.firebase:firebase-common:19.2.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/214e8a13fc5ab0c76d2935f8af25fc26/firebase-common-19.2.0/AndroidManifest.xml:22:13-37
+138            android:initOrder="100" />
+138-->[com.google.firebase:firebase-common:19.2.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/214e8a13fc5ab0c76d2935f8af25fc26/firebase-common-19.2.0/AndroidManifest.xml:23:13-36
+139
+140        <meta-data
+140-->[com.google.android.gms:play-services-basement:17.0.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/1f3bb5c4ffe5d4f92f066b08eb940779/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+141            android:name="com.google.android.gms.version"
+141-->[com.google.android.gms:play-services-basement:17.0.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/1f3bb5c4ffe5d4f92f066b08eb940779/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+142            android:value="@integer/google_play_services_version" />
+142-->[com.google.android.gms:play-services-basement:17.0.0] /Users/fuongbregas/.gradle/caches/transforms-2/files-2.1/1f3bb5c4ffe5d4f92f066b08eb940779/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+143    </application>
+144
+145</manifest>
