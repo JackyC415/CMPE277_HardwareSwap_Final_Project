@@ -105,10 +105,8 @@ public class CardRegistrationActivity extends AppCompatActivity {
                 final int zipcode = Integer.parseInt(ZipCode);
                 final int cvv = Integer.parseInt(CVV);
 
-                //Calling get foreign key function from database
-                String r_id = db.getFK();
                 //Inserting card registration information...
-                db.insertCardData(new CardHolder(1, r_id, CardName, cardnumber, ExpirationDate, cvv, BillingAddress, zipcode, City, State, Country));
+                db.insertCardData(new CardHolder(1, CardName, cardnumber, ExpirationDate, cvv, BillingAddress, zipcode, City, State, Country));
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(CardRegistrationActivity.this);
                 builder.setTitle("Card Added!");

@@ -6,33 +6,22 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.database.*;
 import android.util.Log;
-import android.widget.Toast;
 
-import java.util.*;
-
-//Database controller; responsible for manipulating all database interaction activities
-//Functions include, but not limited to, insert, update, retrieve, edit and delete
-//SQL queries include: login authentication,retrieve all registration info, total order payment receipt
-//info linked to menu items from all categories: dish, appetizer, drinks & desserts orders, searching
-//for a specific menu item based on its category, filtering based on price range, etc...
 public class DBController extends SQLiteOpenHelper {
 
     //Database Version
     private static final int DATABASE_VERSION = 1;
 
     //Database Name
-    private static final String DATABASE_NAME = "myWaytor.db";
+    private static final String DATABASE_NAME = "HardwareSwap.db";
 
     //Database Table Names
-    private static final String TABLE_REGISTRATIONS = "Registration";
     private static final String TABLE_CARDHOLDER = "Cardholder";
     private static final String TABLE_MENU1 = "Menu1";
-    private static final String TABLE_MENU2 = "Menu2";
     private static final String TABLE_HISTORY = "History";
 
     //CardHolder Table Column Names
     private static final String KEY_CARD_pID = "CARD_pID";
-    private static final String KEY_CARD_REGISTRATION_USER = "CARD_REGISTRATION_USER";
     private static final String KEY_CARD_NAME = "CARD_NAME";
     private static final String KEY_CARD_NUMBER = "CARD_NUMBER";
     private static final String KEY_CARD_EXPIRATIONDATE = "CARD_EXPIRATION";
@@ -64,16 +53,12 @@ public class DBController extends SQLiteOpenHelper {
         }
     }
 
-    //Generating Database Tables for Registration, CardHolder and Four Menu Categories
-    //Foreign Keys referencing Registration PK
     @Override
     public void onCreate(SQLiteDatabase db) {
         //Create Tables
         try {
-            db.execSQL("create table " + TABLE_REGISTRATIONS + " (REGISTRATION_pID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, REGISTRATION_FIRST TEXT NOT NULL, REGISTRATION_LAST TEXT NOT NULL, REGISTRATION_USER TEXT UNIQUE, REGISTRATION_PASS TEXT NOT NULL, REGISTRATION_AGE INTEGER NOT NULL, REGISTRATION_GENDER TEXT NOT NULL, REGISTRATION_EMAIL TEXT UNIQUE)");
-            db.execSQL("create table " + TABLE_CARDHOLDER + " (CARD_pID INTEGER PRIMARY KEY NOT NULL, CARD_REGISTRATION_USER TEXT NOT NULL, CARD_NAME TEXT NOT NULL, CARD_NUMBER INTEGER UNIQUE, CARD_EXPIRATION TEXT NOT NULL, CARD_CVV INTEGER NOT NULL, CARD_ADDRESS TEXT NOT NULL, CARD_ZIPCODE INTEGER NOT NULL, CARD_CITY TEXT NOT NULL, CARD_STATE TEXT NOT NULL, CARD_COUNTRY TEXT NOT NULL, FOREIGN KEY(CARD_REGISTRATION_USER) REFERENCES Registration(REGISTRATION_USER))");
+            db.execSQL("create table " + TABLE_CARDHOLDER + " (CARD_pID INTEGER PRIMARY KEY NOT NULL, CARD_NAME TEXT NOT NULL, CARD_NUMBER INTEGER UNIQUE, CARD_EXPIRATION TEXT NOT NULL, CARD_CVV INTEGER NOT NULL, CARD_ADDRESS TEXT NOT NULL, CARD_ZIPCODE INTEGER NOT NULL, CARD_CITY TEXT NOT NULL, CARD_STATE TEXT NOT NULL, CARD_COUNTRY TEXT NOT NULL)");
             db.execSQL("create table " + TABLE_MENU1 + "(MENU_NAME TEXT NOT NULL, MENU_VALUE TEXT NOT NULL, MENU_NUMBER NOT NULL)");
-            db.execSQL("create table " + TABLE_MENU2 + "(MENU_NAME TEXT NOT NULL, MENU_VALUE TEXT NOT NULL, MENU_NUMBER NOT NULL)");
             db.execSQL("create table " + TABLE_HISTORY + "(MENU_NAME TEXT NOT NULL, MENU_VALUE TEXT NOT NULL, MENU_NUMBER NOT NULL)");
         } catch (SQLException e) {
             e.printStackTrace();
@@ -85,10 +70,8 @@ public class DBController extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         //Drop previous table if exists on upgrade
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_REGISTRATIONS);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_CARDHOLDER);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_MENU1);
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_MENU2);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_HISTORY);
         //Regenerate Tables
         onCreate(db);
@@ -113,20 +96,6 @@ public class DBController extends SQLiteOpenHelper {
         return false;
     }
 
-
-    //Database match foreign key routine
-    public String getFK() {
-        SQLiteDatabase db = this.getReadableDatabase();
-
-        Cursor c = db.rawQuery("SELECT REGISTRATION_USER FROM " + TABLE_REGISTRATIONS, null);
-        //+ " R JOIN " + TABLE_CARDHOLDER + " C ON R.REGISTRATION_pID = C.CARD_pID"
-        String FK = "";
-        while (c.moveToNext()) {
-            FK = c.getString(0);
-        }
-        c.close();
-        return FK;
-    }
 
     //Database get card number
     public String getCardNumber() {
@@ -182,7 +151,6 @@ public class DBController extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
-        values.put(KEY_CARD_REGISTRATION_USER, cardholder.getCard_registrationUser());
         values.put(KEY_CARD_NAME, cardholder.getCardHolderName());
         values.put(KEY_CARD_NUMBER, cardholder.getCardNumber());
         values.put(KEY_CARD_EXPIRATIONDATE, cardholder.getExpirationDate());
@@ -236,7 +204,6 @@ public class DBController extends SQLiteOpenHelper {
     public void deleteData() {
         SQLiteDatabase db = this.getWritableDatabase();
         db.delete(TABLE_MENU1, null, null);
-        db.delete(TABLE_MENU2, null, null);
 
     }
 

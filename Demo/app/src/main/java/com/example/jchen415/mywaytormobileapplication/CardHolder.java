@@ -3,7 +3,6 @@ package com.example.jchen415.mywaytormobileapplication;
 public class CardHolder {
 
     private int primaryID;
-    private String card_registrationUser;
     private String cardHolderName;
     private long cardNumber;
     private String expirationDate;
@@ -14,12 +13,11 @@ public class CardHolder {
     private String userState;
     private String userCountry;
 
-    public CardHolder(int primaryID,String card_registrationUser, String cardHolderName, long cardNumber, String expirationDate,
+    public CardHolder(int primaryID, String cardHolderName, long cardNumber, String expirationDate,
                       int cvvNumber, String userAddress, int userZipCode,
                       String userCity, String userState, String userCountry) {
 
         this.primaryID = primaryID;
-        this.card_registrationUser = card_registrationUser;
         this.cardHolderName = cardHolderName;
         this.cardNumber = cardNumber;
         this.expirationDate = expirationDate;
@@ -37,14 +35,6 @@ public class CardHolder {
 
     public void setPrimaryID(int primaryID) {
         this.primaryID = primaryID;
-    }
-
-    public String getCard_registrationUser() {
-        return card_registrationUser;
-    }
-
-    public void setCard_registrationUser(String card_registrationUser) {
-        this.card_registrationUser = card_registrationUser;
     }
 
     public String getCardHolderName() {
